@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Economia Avançada — Trilha de Pesquisa</title>
+<meta name="description" content="Trilha de pesquisa em economia avançada com 6 temas progressivos baseados em Harvard, MIT, Chicago e LSE.">
+<link rel="stylesheet" href="css/styles.css">
+<!-- Tema aplicado antes do paint para evitar flash -->
+<script>
+  (function(){
+    var t = localStorage.getItem('economia-theme')
+      || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+</head>
+<body>
+
+<!-- ═══ Nav ═══ -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="#">Economia Avançada</a>
+    <div class="nav-links">
+      <a href="#visao-geral">Visão geral</a>
+      <a href="#trilha">Trilha</a>
+      <a href="#cronograma">Cronograma</a>
+      <button class="theme-btn" id="theme-btn" aria-label="Alternar tema"></button>
+    </div>
+  </div>
+</nav>
+
+<div class="site-wrap">
+
+  <!-- ═══ Hero ═══ -->
+  <section class="hero">
+    <p class="hero-eyebrow">Guia de pesquisa · 2025–2026</p>
+    <h1>Trilha de pesquisa em <em>economia avançada</em></h1>
+    <p class="hero-desc">
+      Seis temas fundamentais ensinados em Harvard, MIT, Chicago e LSE —
+      organizados em ordem progressiva com fontes primárias, roteiro semanal
+      e aplicações ao Brasil.
+    </p>
+    <div class="hero-stats">
+      <div>
+        <span class="hero-stat-num">6</span>
+        <div class="hero-stat-label">temas</div>
+      </div>
+      <div>
+        <span class="hero-stat-num">3</span>
+        <div class="hero-stat-label">fases</div>
+      </div>
+      <div>
+        <span class="hero-stat-num">~24</span>
+        <div class="hero-stat-label">semanas</div>
+      </div>
+      <div>
+        <span class="hero-stat-num">18+</span>
+        <div class="hero-stat-label">fontes primárias</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Visão geral ═══ -->
+  <section class="section" id="visao-geral">
+    <div class="section-header">
+      <div class="section-num">01 — Visão geral</div>
+      <h2 class="section-title">Todos os temas</h2>
+    </div>
+    <div class="overview-grid">
+
+      <a class="overview-card" href="#topic-01">
+        <div class="ov-num">01 de 06</div>
+        <div class="ov-area" style="background:var(--c-macro-bg);color:var(--c-macro-text);border-color:var(--c-macro-border);">Macro</div>
+        <div class="ov-title">Expectativas Racionais e Formação de Preços</div>
+        <div class="ov-arrow">↓</div>
+      </a>
+
+      <a class="overview-card" href="#topic-02">
+        <div class="ov-num">02 de 06</div>
+        <div class="ov-area" style="background:var(--c-micro-bg);color:var(--c-micro-text);border-color:var(--c-micro-border);">Micro</div>
+        <div class="ov-title">Assimetria de Informação e Design de Mecanismos</div>
+        <div class="ov-arrow">↓</div>
+      </a>
+
+      <a class="overview-card" href="#topic-03">
+        <div class="ov-num">03 de 06</div>
+        <div class="ov-area" style="background:var(--c-macro-bg);color:var(--c-macro-text);border-color:var(--c-macro-border);">Macro</div>
+        <div class="ov-title">Modelos DSGE e Ciclos Econômicos</div>
+        <div class="ov-arrow">↓</div>
+      </a>
+
+      <a class="overview-card" href="#topic-04">
+        <div class="ov-num">04 de 06</div>
+        <div class="ov-area" style="background:var(--c-beh-bg);color:var(--c-beh-text);border-color:var(--c-beh-border);">Comportamental</div>
+        <div class="ov-title">Economia Comportamental e Nudges</div>
+        <div class="ov-arrow">↓</div>
+      </a>
+
+      <a class="overview-card" href="#topic-05">
+        <div class="ov-num">05 de 06</div>
+        <div class="ov-area" style="background:var(--c-fin-bg);color:var(--c-fin-text);border-color:var(--c-fin-border);">Finanças</div>
+        <div class="ov-title">Hipótese de Mercados Eficientes e Anomalias</div>
+        <div class="ov-arrow">↓</div>
+      </a>
+
+      <a class="overview-card" href="#topic-06">
+        <div class="ov-num">06 de 06</div>
+        <div class="ov-area" style="background:var(--c-grow-bg);color:var(--c-grow-text);border-color:var(--c-grow-border);">Crescimento</div>
+        <div class="ov-title">Crescimento Endógeno e Armadilha de Renda Média</div>
+        <div class="ov-arrow">↓</div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ═══ Trilha ═══ -->
+  <section class="section" id="trilha">
+    <div class="section-header">
+      <div class="section-num">02 — Trilha</div>
+      <h2 class="section-title">Roteiro de pesquisa</h2>
+    </div>
+
+    <div class="track">
+
+      <!-- ── Fase 1 ── -->
+      <div class="phase-label">Fase 1 — Fundamentos da racionalidade</div>
+
+      <!-- 01 -->
+      <div class="track-node" id="topic-01">
+        <div class="track-spine">
+          <div class="track-dot" style="background:var(--c-macro-dot);border-color:var(--c-macro-bg);"></div>
+          <div class="track-line-seg"></div>
+        </div>
+        <div class="topic-card" onclick="toggle(this)">
+          <div class="card-header">
+            <span class="card-area-tag" style="background:var(--c-macro-bg);color:var(--c-macro-text);border-color:var(--c-macro-border);">Macro</span>
+            <div class="card-meta">
+              <div class="card-num">01 de 06 · Ponto de partida</div>
+              <div class="card-title">Expectativas Racionais e Formação de Preços</div>
+              <div class="card-sub">Como agentes antecipam o futuro e impactam a política econômica</div>
+            </div>
+            <div class="card-toggle">+</div>
+          </div>
+          <div class="card-body">
+            <div class="card-body-inner">
+              <div class="card-why">
+                Ponto de partida obrigatório — sem entender como agentes formam expectativas, nenhum outro modelo macro faz sentido completo. É a base de toda a política monetária moderna.
+              </div>
+              <div class="subsection-label">Roteiro semanal</div>
+              <div class="steps">
+                <div class="step">
+                  <div class="step-week">Semana 1–2</div>
+                  <div class="step-text">Ler Muth (1961). Entender a Crítica de Lucas. Assistir Nobel Lecture de Sargent no YouTube (45 min). Focar na ideia: agentes usam toda informação disponível e não erram sistematicamente.</div>
+                </div>
+                <div class="step">
+                  <div class="step-week">Semana 3</div>
+                  <div class="step-text">Estudar como o Banco Central do Brasil usa forward guidance. Ler o Relatório Focus semanal como exercício prático de leitura de expectativas de mercado.</div>
+                </div>
+                <div class="step">
+                  <div class="step-week">Semana 4</div>
+                  <div class="step-text">Resolver exercícios do MIT OCW 14.05 sobre equilíbrio com expectativas racionais. Comparar com expectativas adaptativas — qual a diferença de implicação de política?</div>
+                </div>
+              </div>
+              <div class="subsection-label">Fontes primárias</div>
+              <div class="sources-block">
+                <div class="source-item"><div class="source-dot"></div><span>Paper: Muth (1961) — Rational Expectations and the Theory of Price Movements</span></div>
+                <div class="source-item"><div class="source-dot"></div><span>Livro: Ljungqvist & Sargent — Recursive Macroeconomic Theory (cap. 1–3)</span></div>
+                <div class="source-item"><div class="source-dot"></div><span>Aula: Nobel Lecture de Thomas Sargent (YouTube, 2011)</span></div>
+                <div class="source-item"><div class="source-dot"></div><span>Prático: Relatório Focus — BCB (semanal, gratuito no site do Banco Central)</span></div>
+              </div>
+              <div class="insight-box">
+                <div class="insight-label">Conceito-chave</div>
+                <div class="insight-title">Crítica de Lucas</div>
+                <div class="insight-text">Se agentes sabem que o governo vai expandir a oferta monetária, eles antecipam a inflação e já a incorporam em salários — anulando o efeito real da política. Apenas surpresas têm efeito no curto prazo.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 -->
+      <div class="track-node" id="topic-02">
+        <div class="track-spine">
+          <div class="track-dot" style="background:var(--c-micro-dot);border-color:var(--c-micro-bg);"></div>
+          <div class="track-line-seg"></div>
+        </div>
+        <div class="topic-card" onclick="toggle(this)">
+          <div class="card-header">
+            <span class="card-area-tag" style="background:var(--c-micro-bg);color:var(--c-micro-text);border-color:var(--c-micro-border);">Micro</span>
+            <div class="card-meta">
+              <div class="card-num">02 de 06 · Paralelo ao tema 01</div>
+              <div class="card-title">Assimetria de Informação e Design de Mecanismos</div>
+              <div class="card-sub">Mercados com informação desigual e como criar regras que os corrigem</div>
+            </div>
+            <div class="card-toggle">+</div>
+          </div>
+          <div class="card-body">
+            <div class="card-body-inner">
+              <div class="card-why">
+                Pode ser estudado em paralelo ao tema 01. Fornece o arcabouço microeconômico que sustenta regulação, contratos e leilões — é a base da economia aplicada moderna.
+              </div>
+              <div class="subsection-label">Roteiro semanal</div>
+              <div class="steps">
+                <div class="step">
+                  <div class="step-week">Semana 1–2</div>
+                  <div class="step-text">Ler Akerlof (1970) — o paper dos lemons. Entender seleção adversa (antes do contrato) vs. risco moral (depois) com exemplos do mercado de saúde e seguros.</div>
+                </div>
+                <div class="step">
+                  <div class="step-week">Semana 3</div>
+                  <div class="step-text">Estudar Spence (1973) sobre sinalização educacional. Relacionar com o papel dos diplomas no mercado de trabalho brasileiro — o diploma como sinal, não como aprendizado.</div>
+                </div>
+                <div class="step">
+                  <div class="step-week">Semana 4</div>
+                  <div class="step-text">Pesquisar o leilão do espectro 5G no Brasil (2021) como caso de design de mecanismos. Ler nota técnica da Anatel sobre o formato de leilão escolhido.</div>
+                </div>
+              </div>
+              <div class="subsection-label">Fontes primárias</div>
+              <div class="sources-block">
+                <div class="source-item"><div class="source-dot"></div><span>Paper: Akerlof (1970) — The Market for Lemons</span></div>
+                <div class="source-item"><div class="source-dot"></div><span>Paper: Spence (1973) — Job Market Signaling</span></div>
+                <div class="source-item"><div class="source-dot"></div><span>Livro: Bolton & Dewatripont — Contract Theory (cap. 1–4)</span></div>
+                <div class="source-item"><div class="source-dot"></div><span>Caso: Relatório de leilão 5G — Anatel (2021)</span></div>
+              </div>
+              <div class="insight-box">
+                <div class="insight-label">Exemplo prático</div>
+                <div class="insight-title">Leilão do 5G brasileiro</div>
+                <div class="insight-text">O leilão de 2021 arrecadou R$ 47 bilhões usando design de mecanismos combinado (CCA) — permitindo que operadoras biddassem em lotes complementares simultaneamente, reduzindo distorções e maximizando alocação eficiente.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Fase 2 ── -->
+      <div class="phase-label">Fase 2 — Modelos e mercados</div>
+
+      <!-- 03 -->
+      <div class="track-node" id="topic-03">
+        <div class="track-spine">
+          <div class="track-dot" style="background:var(--c-macro-dot);border-color:var(--c-macro-bg);"></div>
+          <div class="track-line-seg"></div>
+        </div>
+        <div class="topic-card" onclick="toggle(this)">
+          <div class="card-header">
+            <span class="card-area-tag" style="background:var(--c-macro-bg);color:var(--c-macro-text);border-color:var(--c-macro-border);">Macro</span>
+            <div class="card-meta">
+              <div class="card-num">03 de 06 · Recomendado após tema 01</div>
+              <div class="card-title">Modelos DSGE e Ciclos Econômicos</div>
+              <div class="card-sub">A linguagem dos bancos centrais modernos</div>
+            </div>
+            <div class="card-toggle">+</div>
+          </div>
+          <div class="card-body">
+            <div class="card-body-inner">
+              <div class="card-why">
+                Constrói diretamente sobre expectativas racionais para modelar a economia inteira. É o que o BCB, Fed e BCE usam para simular política monetária e projetar inflação.
+              </div>
+              <div class="subsection-label">Roteiro semanal</div>
+              <div class="steps">
+                <div class="step">
+                  <div class="step-week">Semana 1–2</div>
+                  <div class="step-text">Assistir aulas MIT OCW 14.05 sobre RBC vs. modelos Neo-Keynesianos. Entender a diferença crucial: RBC coloca flutuações em choques reais; NK adiciona rigidez de preços tornando política monetária relevante.</div>
+                </div>
+                <div class="step">
+                  <div class="step-week">Semana 3</div>
+                  <div class="step-text">Ler a nota técnica do modelo SAMBA do Banco Central do Brasil — disponível no site do BCB. Entender como fricções financeiras foram adicionadas após a crise de 2008.</div>
+                </div>
+                <div class="step">
+                  <div class="step-week">Semana 4</div>
+                  <div class="step-text">Explorar o software Dynare (gratuito). Rodar um modelo NK simples e observar respostas de impulso. Comparar os resultados com decisões recentes do COPOM.</div>
+                </div>
+              </div>
+              <div class="subsection-label">Fontes primárias</div>
+              <div class="sources-block">
+                <div class="source-item"><div class="source-dot"></div><span>Livro: Woodford — Interest and Prices (2003), cap. 1–3</span></div>
+                <div class="source-item"><div class="source-dot"></div><span>Livro intro: Galí — Monetary Policy, Inflation, and the Business Cycle</span></div>
+                <div class="source-item"><div class="source-dot"></div><span>Paper BCB: Nota Técnica do modelo SAMBA (site do Banco Central)</span></div>
+                <div class="source-item"><div class="source-dot"></div><span>Software: Dynare — dsge.net (gratuito, roda em Octave)</span></div>
+              </div>
+              <div class="insight-box">
+                <div class="insight-label">Contexto crítico</div>
+                <div class="insight-title">Por que DSGE foi criticado após 2008</div>
+                <div class="insight-text">Os modelos padrão não tinham setor financeiro relevante, não modelavam crises de crédito e assumiam mercados completos. Desde então surgiram modelos com fricções financeiras (Gertler-Karadi, 2011) e agentes heterogêneos (HANK) — o estado-da-arte atual.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 05 -->
+      <div class="track-node" id="topic-05">
+        <div class="track-spine">
+          <div class="track-dot" style="background:var(--c-fin-dot);border-color:var(--c-fin-bg);"></div>
+          <div class="track-line-seg"></div>
+        </div>
+        <div class="topic-card" onclick="toggle(this)">
+          <div class="card-header">
+            <span class="card-area-tag" style="background:var(--c-fin-bg);color:var(--c-fin-text);border-color:var(--c-fin-border);">Finanças</span>
+            <div class="card-meta">
+              <div class="card-num">05 de 06 · Recomendado após temas 01 e 02</div>
+              <div class="card-title">Hipótese de Mercados Eficientes e Anomalias</div>
+              <div class="card-sub">O grande debate Fama vs. Shiller — Nobel 2013</div>
+            </div>
+            <div class="card-toggle">+</div>
+          </div>
+          <div class="card-body">
+            <div class="card-body-inner">
+              <div class="card-why">
+                Aplica os fundamentos de informação e racionalidade ao mercado financeiro. Central para entender precificação de ativos, limites da análise técnica e como o mercado brasileiro difere dos desenvolvidos.
+              </div>
+              <div class="subsection-label">Roteiro semanal</div>
+              <div class="steps">
+                <div class="step">
+                  <div class="step-week">Semana 1–2</div>
+                  <div class="step-text">Ler Fama (1970) — Efficient Capital Markets. Entender as três formas de eficiência. Exercício: testar a forma fraca com dados históricos do Ibovespa.</div>
+                </div>
+                <div class="step">
+                  <div class="step-week">Semana 3</div>
+                  <div class="step-text">Ler Shiller (1981) sobre excesso de volatilidade. Estudar os fatores Fama-French (3 e 5 fatores) como tentativa de sistematizar anomalias como value premium e momentum.</div>
+                </div>
+                <div class="step">
+                  <div class="step-week">Semana 4</div>
+                  <div class="step-text">Pesquisar literatura empírica sobre eficiência do mercado brasileiro (B3). Buscar papers no SSRN com "Ibovespa efficiency" ou "Brazilian stock market anomalies".</div>
+                </div>
+              </div>
+              <div class="subsection-label">Fontes primárias</div>
+              <div class="sources-block">
+                <div class="source-item"><div class="source-dot"></div><span>Paper: Fama (1970) — Efficient Capital Markets</span></div>
+                <div class="source-item"><div class="source-dot"></div><span>Paper: Shiller (1981) — Do Stock Prices Move Too Much?</span></div>
+                <div class="source-item"><div class="source-dot"></div><span>Livro: Malkiel — A Random Walk Down Wall Street</span></div>
+                <div class="source-item"><div class="source-dot"></div><span>Contraponto: Shiller — Irrational Exuberance (3ª ed.)</span></div>
+              </div>
+              <div class="insight-box">
+                <div class="insight-label">O paradoxo do Nobel</div>
+                <div class="insight-title">Fama e Shiller — mesmo ano, visões opostas</div>
+                <div class="insight-text">Em 2013, o Nobel foi dado simultaneamente a Fama (mercados são eficientes) e Shiller (mercados são irracionais). O prêmio sinalizou que ambos capturaram partes reais do fenômeno — a verdade está entre os dois.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Fase 3 ── -->
+      <div class="phase-label">Fase 3 — Comportamento e crescimento</div>
+
+      <!-- 04 -->
+      <div class="track-node" id="topic-04">
+        <div class="track-spine">
+          <div class="track-dot" style="background:var(--c-beh-dot);border-color:var(--c-beh-bg);"></div>
+          <div class="track-line-seg"></div>
+        </div>
+        <div class="topic-card" onclick="toggle(this)">
+          <div class="card-header">
+            <span class="card-area-tag" style="background:var(--c-beh-bg);color:var(--c-beh-text);border-color:var(--c-beh-border);">Comportamental</span>
+            <div class="card-meta">
+              <div class="card-num">04 de 06 · Paralelo à fase 2</div>
+              <div class="card-title">Economia Comportamental e Nudges</div>
+              <div class="card-sub">Como vieses cognitivos moldam decisões e como políticas os exploram</div>
+            </div>
+            <div class="card-toggle">+</div>
+          </div>
+          <div class="card-body">
+            <div class="card-body-inner">
+              <div class="card-why">
+                Contrasta diretamente com o agente racional dos temas anteriores — e fornece fundamentos para políticas públicas baseadas em evidência comportamental. Altamente aplicável ao Brasil.
+              </div>
+              <div class="subsection-label">Roteiro semanal</div>
+              <div class="steps">
+                <div class="step">
+                  <div class="step-week">Semana 1–2</div>
+                  <div class="step-text">Ler Kahneman & Tversky (1979) — Prospect Theory. Mapear os vieses principais: ancoragem, desconto hiperbólico (por que não poupamos para aposentadoria), status quo bias e efeito de enquadramento.</div>
+                </div>
+                <div class="step">
+                  <div class="step-week">Semana 3</div>
+                  <div class="step-text">Ler Thaler & Sunstein — Nudge (livro acessível). Identificar exemplos de nudges no Brasil: estrutura do Pix, desenho do Open Finance, comunicação do INSS.</div>
+                </div>
+                <div class="step">
+                  <div class="step-week">Semana 4</div>
+                  <div class="step-text">Explorar publicações do BCBComp (Núcleo de Comportamento do Banco Central). Ler um paper empírico recente sobre experimentos de campo no contexto financeiro brasileiro.</div>
+                </div>
+              </div>
+              <div class="subsection-label">Fontes primárias</div>
+              <div class="sources-block">
+                <div class="source-item"><div class="source-dot"></div><span>Paper: Kahneman & Tversky (1979) — Prospect Theory</span></div>
+                <div class="source-item"><div class="source-dot"></div><span>Livro acessível: Kahneman — Thinking, Fast and Slow</span></div>
+                <div class="source-item"><div class="source-dot"></div><span>Livro aplicado: Thaler & Sunstein — Nudge</span></div>
+                <div class="source-item"><div class="source-dot"></div><span>Brasil: Publicações do BCBComp — site do Banco Central</span></div>
+              </div>
+              <div class="insight-box">
+                <div class="insight-label">Nudge no Brasil</div>
+                <div class="insight-title">Opt-out vs. opt-in</div>
+                <div class="insight-text">Inscrição automática em previdência privada (opt-out em vez de opt-in) aumentou a adesão de 36% para 86% no Reino Unido. O BCBComp estudou efeitos similares na portabilidade de contas no Brasil.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 06 -->
+      <div class="track-node" id="topic-06">
+        <div class="track-spine">
+          <div class="track-dot" style="background:var(--c-grow-dot);border-color:var(--c-grow-bg);"></div>
+        </div>
+        <div class="topic-card" onclick="toggle(this)">
+          <div class="card-header">
+            <span class="card-area-tag" style="background:var(--c-grow-bg);color:var(--c-grow-text);border-color:var(--c-grow-border);">Crescimento</span>
+            <div class="card-meta">
+              <div class="card-num">06 de 06 · Síntese da trilha</div>
+              <div class="card-title">Crescimento Endógeno e Armadilha de Renda Média</div>
+              <div class="card-sub">Por que o Brasil pode não escapar sem mudar agora</div>
+            </div>
+            <div class="card-toggle">+</div>
+          </div>
+          <div class="card-body">
+            <div class="card-body-inner">
+              <div class="card-why">
+                A síntese da trilha — conecta expectativas, incentivos, informação, comportamento e finanças na questão maior: o que determina a riqueza das nações? E por que o Brasil está em risco.
+              </div>
+              <div class="subsection-label">Roteiro semanal</div>
+              <div class="steps">
+                <div class="step">
+                  <div class="step-week">Semana 1–2</div>
+                  <div class="step-text">Comparar Solow (1956) com Romer (1990). Entender por que retornos crescentes de escala do conhecimento mudam tudo. Assistir Nobel Lecture de Paul Romer (2018, YouTube).</div>
+                </div>
+                <div class="step">
+                  <div class="step-week">Semana 3</div>
+                  <div class="step-text">Ler "Why Nations Fail" (Acemoglu & Robinson) — foco nos capítulos sobre América Latina. Comparar trajetórias Brasil vs. Coreia do Sul: mesmo PIB per capita em 1960, 5x de diferença hoje.</div>
+                </div>
+                <div class="step">
+                  <div class="step-week">Semana 4</div>
+                  <div class="step-text">Ler World Development Report 2024 do Banco Mundial (gratuito). 108 países na armadilha, incluindo o Brasil. PIB per capita em 2024: US$ 10.314 — abaixo da média global de US$ 10.589.</div>
+                </div>
+              </div>
+              <div class="subsection-label">Fontes primárias</div>
+              <div class="sources-block">
+                <div class="source-item"><div class="source-dot"></div><span>Paper: Romer (1990) — Endogenous Technological Change</span></div>
+                <div class="source-item"><div class="source-dot"></div><span>Livro: Acemoglu & Robinson — Why Nations Fail</span></div>
+                <div class="source-item"><div class="source-dot"></div><span>Relatório: World Development Report 2024 — Banco Mundial (gratuito)</span></div>
+                <div class="source-item"><div class="source-dot"></div><span>Nobel Lecture: Paul Romer (2018, YouTube)</span></div>
+              </div>
+              <div class="insight-box">
+                <div class="insight-label">O diagnóstico do Brasil</div>
+                <div class="insight-title">Desindustrialização prematura + P&D abaixo de 1%</div>
+                <div class="insight-text">Custo logístico de 13% do PIB (média mundial: 8%), desindustrialização sem substituição por serviços de alto valor, P&D abaixo de 1% do PIB e janela demográfica que se fecha por volta de 2035. A Coreia investiu 3–4% do PIB em P&D consistentemente.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /track -->
+  </section>
+
+  <!-- ═══ Cronograma ═══ -->
+  <section class="section" id="cronograma">
+    <div class="section-header">
+      <div class="section-num">03 — Cronograma</div>
+      <h2 class="section-title">Visão por fase</h2>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-phase">
+        <div class="tl-phase-title">Fase 1 · Semanas 1–8</div>
+        <div class="tl-item">
+          <div class="tl-weeks">Semanas 1–4</div>
+          <div class="tl-name">Expectativas Racionais</div>
+          <span class="tl-tag" style="background:var(--c-macro-bg);color:var(--c-macro-text);border-color:var(--c-macro-border);">Macro</span>
+        </div>
+        <div class="tl-item">
+          <div class="tl-weeks">Semanas 5–8 · paralelo</div>
+          <div class="tl-name">Assimetria de Informação</div>
+          <span class="tl-tag" style="background:var(--c-micro-bg);color:var(--c-micro-text);border-color:var(--c-micro-border);">Micro</span>
+        </div>
+      </div>
+
+      <div class="timeline-phase">
+        <div class="tl-phase-title">Fase 2 · Semanas 9–16</div>
+        <div class="tl-item">
+          <div class="tl-weeks">Semanas 9–12</div>
+          <div class="tl-name">Modelos DSGE</div>
+          <span class="tl-tag" style="background:var(--c-macro-bg);color:var(--c-macro-text);border-color:var(--c-macro-border);">Macro</span>
+        </div>
+        <div class="tl-item">
+          <div class="tl-weeks">Semanas 13–16 · paralelo</div>
+          <div class="tl-name">Mercados Eficientes</div>
+          <span class="tl-tag" style="background:var(--c-fin-bg);color:var(--c-fin-text);border-color:var(--c-fin-border);">Finanças</span>
+        </div>
+      </div>
+
+      <div class="timeline-phase">
+        <div class="tl-phase-title">Fase 3 · Semanas 17–24</div>
+        <div class="tl-item">
+          <div class="tl-weeks">Semanas 17–20</div>
+          <div class="tl-name">Economia Comportamental</div>
+          <span class="tl-tag" style="background:var(--c-beh-bg);color:var(--c-beh-text);border-color:var(--c-beh-border);">Comportamental</span>
+        </div>
+        <div class="tl-item">
+          <div class="tl-weeks">Semanas 21–24</div>
+          <div class="tl-name">Crescimento Endógeno</div>
+          <span class="tl-tag" style="background:var(--c-grow-bg);color:var(--c-grow-text);border-color:var(--c-grow-border);">Crescimento</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div><!-- /site-wrap -->
+
+<!-- ═══ Footer ═══ -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-note">Economia Avançada — Trilha de Pesquisa</span>
+    <span class="footer-note">Harvard · MIT · Chicago · LSE · World Bank · Nobel Lectures</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
